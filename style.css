@@ -1,0 +1,33 @@
+#title{
+text-align: center;
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: #03a87c;
+padding: 20px;
+color: white;
+font-size: 40px;
+margin-bottom: 80px;
+}
+#author{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+#quote{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style:oblique;
+    margin: 0;
+}
+
+#quote2 {
+    margin: 0;
+}
+
+#search {
+    margin: 40px;
+}
+
+body{
+    
+}
