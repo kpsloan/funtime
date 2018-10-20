@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Bi-Partisan Bollocks</title>
 </head>
+
 <body>
-    
+    <div class="row">
+        <header id="title">Bi-Partisan Bollocks</header>
+    </div>
+    <div class="row" id="quote2">
+        <p id="quote">"The enemy isn't conservatism. The enemy isn't liberalism. The enemy is Bull$#*!"</p>
+    </div>
+    <div class="row">
+        <div class="col s5">
+        </div>
+        <div class="col s7">
+            <p id="author">-Lars-Erik Nelson, Political Columnist</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="input-field col s12" id="search">
+                <textarea id="searchTerm" class="materialize-textarea"></textarea>
+                <label for="textarea1">Search</label>
+                <a class="waves-effect waves-teal btn-flat" style="vertical-align: 50%" id="searchButton">Search</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+          <br>
+  
+          <!-- This card will initially be made up of a card and wells for each of the articles retrieved -->
+          <div class="card">
+  
+            <!-- card Heading for the retrieved articles box -->
+            <div class="card-header">
+              <strong>
+                <i class="fa fa-table"></i>Results</strong>
+            </div>
+  
+            <!-- This main card will hold each of the resulting articles -->
+            <div class="card-body" id="article-section">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
 </body>
+<script src="apps.js"></script>
 </html>
