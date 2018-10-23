@@ -1,33 +1,54 @@
 #title{
-text-align: center;
-font-family: Georgia, 'Times New Roman', Times, serif;
-background-color: #03a87c;
-padding: 20px;
-color: white;
-font-size: 60px;
-margin-bottom: 80px;
-}
-#author{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 12px;
-}
-#quote{
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    font-style:oblique;
-    margin: 0;
-}
-
-#quote2 {
-    margin: 0;
-}
-
-#search {
-    margin: 40px;
-}
-
-body{
+    background-color: #03a87c;
+    padding: 20px;
+    color: white;
+    font-size: 60px;
+    margin-bottom: 80px;
+    }
+    #author{
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 12px;
+    }
+    #quote{
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        font-style:oblique;
+        margin: 0;
+    }
     
+    #quote2 {
+        margin: 0;
+    }
+    
+    #search {
+        margin: 40px;
+    }
+    
+    .card-header{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        background-color: #03a87c;
+        color: white;
+    }
+    .card {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #article-section {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+    #tweet-section{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 10px;
+        overflow: hidden;
+    }
+.container{
+    margin-bottom: none;
 }
