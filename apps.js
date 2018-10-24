@@ -55,18 +55,18 @@ function updateAP(newsData) {
         var title = article.title;
         var $articleListItem = $("<li class='list-group-item articleTitle'>");
 
-        
+
         var spectrum = ["Liberal", "Neutral", "Conservative"];
         var reporter = ["MSNBC", "Associated Press", "Fox News"];
-        
+
 
         if (title && article.title) {
             console.log(article.title);
             $articleListItem.append(
-                "<h3>" + 
-                spectrum + 
-                " Media " + 
-                reporter + 
+                "<h3>" +
+                spectrum +
+                " Media " +
+                reporter +
                 "<h3>" +
                 "<h4> " +
                 article.title +
@@ -82,12 +82,11 @@ function updateAP(newsData) {
             console.log(description);
             $articleListItem.append("<h6>" + description + "</h6>");
         }
-
         // Log section, and append to document if exists
         var url = article.url;
         console.log(article.url);
         if (url) {
-            $articleListItem.append("<h6>URL: " + url + "</h6>");
+            $articleListItem.append("<a href=" + url + ">" + "Source" + "</a>");
         }
 
         // Log published date, and append to document if exists
