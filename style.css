@@ -11,13 +11,15 @@
         text-align: center;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 14px;
+        margin-right:10px;
     }
     #quote{
-        text-align: center;
+        text-align: right;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 18px;
         font-style:oblique;
         margin: 0;
+        margin-left:300px;
     }
     
     #quote2 {
@@ -89,5 +91,5 @@ img{
     width: 50%;
     height: 150px;
     width: 300px;
-    animation: bounce infinite;
+    animation: bounceInDown;
 }

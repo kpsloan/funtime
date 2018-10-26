@@ -1,4 +1,4 @@
-var q = $("#searchTerm").val();
+
 
 // API key - 9f3117485a8f44dda362d7d6f1a36c89
 
@@ -8,6 +8,7 @@ var q = $("#searchTerm").val();
 */
 function buildQueryURL(source) {
 
+    var q = $("#searchTerm").val();
     var queryURL = "https://newsapi.org/v2/top-headlines?q=" + q + "&sources=" + source + "&pageSize=1&";
 
     var queryParams = { "apiKey": "9f3117485a8f44dda362d7d6f1a36c89" };
@@ -126,13 +127,15 @@ function updateTwitter(TwitterData) {
         // Create the  list group to contain the articles and add the article content for each
         var $articleList = $("<ul>");
         $articleList.addClass("list-group");
-
+        // $carouselList.addClass("carousel slide");
         // Add the newly created element to the DOM
         $("#tweet-section").append($articleList);
-
+        // $("#carouselExampleSlidesOnly").append($carouselListItem);
+        // $('.carousel-inner').append('<li data-target="#carouselExampleIndicators" data-slide-to="'+ i + '"></li>');
         // If the article has a headline, log and append to $articleList
         var tweet = article.text;
-        var $articleListItem = $("<li class='list-group-item articleTitle'>");
+        var $articleListItem = $("<li class='list-group-item articleTitle'>"); //
+        // var $carouselListItem = $('<li data-ride="carousel" data-slide-to="' + i + '"></li>');
 
         if (tweet && article.text) {
             console.log(article.text);
@@ -144,7 +147,7 @@ function updateTwitter(TwitterData) {
         }
 
         // If the article has a byline, log and append to $articleList
-        var user = article.user.name;
+        var user = article.user.name; //
 
         if (user) {
             console.log(user);
@@ -152,8 +155,8 @@ function updateTwitter(TwitterData) {
         }
 
         // Log section, and append to document if exists
-        var retweetCount = article.retweet_count;
-        console.log(article.retweet_count);
+        var retweetCount = article.retweet_count;//
+        console.log(article.retweet_count);//
         if (retweetCount) {
             $articleListItem.append("<h6>Retweet Count: " + retweetCount + "</h6>");
         }
@@ -161,6 +164,7 @@ function updateTwitter(TwitterData) {
 
         // Append the article
         $articleList.append($articleListItem);
+        $carouselList.append($carouselListItem);
     }
 }
 
@@ -233,3 +237,13 @@ $("#searchButton").on("click", function (event) {
     // Get reference to existing tbody element, create a new table row eleme
 
 });
+// $(document).ready(function() {
+//     $( ".carousel-item" ).each(function( i ) {
+//         if ( $(this).hasClass("active") ) {
+//             $(this).removeClass('active');
+//             $(this).addClass("changed");
+//         } else {
+//             $(this).addClass("active");
+//         }
+//     });
+// });
