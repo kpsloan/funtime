@@ -1,41 +1,185 @@
-#title{
-text-align: center;
-font-family: Georgia, 'Times New Roman', Times, serif;
-background-color: #03a87c;
-padding: 20px;
-color: white;
-font-size: 60px;
-margin-bottom: 80px;
+body {
+    
+    background-image: url(./assets/greyzz.png)
 }
+
+#title {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #008460;
+    font-size: 60px;
+    }
+
 #author{
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 12px;
-}
-#quote{
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    font-style:oblique;
-    margin: 0;
-}
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 14px;
+        margin: 0px;
+        
+    }
 
+#quote {
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 18px;
+        font-style:oblique;
+        margin: 0;
+        
+    }
+    
 #quote2 {
-    margin: 0;
-}
-
+        margin: 0;
+    }
+    
 #search {
-    margin: 40px;
-}
+        margin: 40px;
+    }
+    
+ #resetButton {
+        background-color: #03a87c;
+        position: absolute;
+        top: 5%;
+        left: 90%
+    }
 
-#results {
-    font-size: 50px;
-}
+.card-header{
+        font-family: 'Lato', sans-serif;
+        font-size: 40px;
+        color: #008460;
+        text-align: center;
+        
+    }
+
+.card {
+        font-family: 'Lato', sans-serif;
+        font-size: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border: none;
+        box-shadow: none;
+        padding: 10px;
+        background-color: #f7fbff;
+    }
+   
+#article-section {
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        color: #232323;
+    }
+    
+#tweet-section {
+        font-family: 'Lato', sans-serif;
+        font-size: 10px;
+        overflow: hidden;
+        color: #232323;
+    }
+
 
 #tweets {
-    font-size: 50px;
+    padding-bottom: 20px;
+
 }
 
-body{
-    
+.container{
+    margin-bottom: none;
 }
+
+#spectrum {
+    font-size: 26px;
+    font-family: 'Lato', sans-serif;
+    margin-left: 10px;
+    text-align: center;
+    margin: 0px;
+}
+
+#sourceName {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin-left: 10px;
+    text-align: center;
+}
+
+#articleTitle {
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+#description {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    margin-left: 10px;
+}
+
+#tweetText {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+}
+
+#user {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: #3663B0;
+    margin: 0px;
+}
+
+#retweetCount {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: #3663B0;
+    margin: 0px;
+}
+
+#source {
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    color: #008460;
+    font-size: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 150px;
+    width: 300px;
+}
+
+td {
+    padding: 0;
+    vertical-align: baseline;
+    width: 20%;
+    padding: 10px;
+    animation-duration: 2s;
+}
+
+#tweetBird {
+    height: 150px;
+    width: 150px;
+    padding: 20px;
+}
+
+.tweet-group {
+    display: inline-block
+}
+
+#mediaSpectrum {
+    animation-duration: 2s;
+}
+
+#tweet {
+    vertical-align: top;
+}
+
