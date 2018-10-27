@@ -175,6 +175,14 @@ function clear() {
 
 // CLICK HANDLERS
 // ==========================================================
+$('#searchTerm').keyup(function () {
+        if ($(this).val() == '') {
+            $('#searchButton').prop('disabled', true);
+        } else {
+            $('#searchButton').prop('disabled', false);
+        }
+    }).keyup();
+
 
 // .on("click") function associated with the Search Button
 $("#searchButton").on("click", function (event) {
