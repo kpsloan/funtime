@@ -1,4 +1,3 @@
-
 var really_i = 0;
 
 $(document).ready(function () {
@@ -271,6 +270,4 @@ $(document).ready(function () {
 
     // Empty the region associated with the articles
     clear();
-
 });
-
